@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Client Side Routing</title>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="/assets/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/assets/vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/app.js"></script>
+    <script type="text/javascript" src="/assets/scripts/controllers/aesopController.js"></script>
+    <script type="text/javascript" src="/assets/scripts/controllers/projectsController.js"></script>
+    <script type="text/javascript" src="/assets/scripts/controllers/someController.js"></script>
+  </head>
+  <body>
+      <ng-include src="'/views/partials/header.html'"></ng-include>
+      <ng-include src="'/views/partials/nav.html'"></ng-include>
+      <main ng-view></main>
+      <ng-include src="'/views/partials/footer.html'"></ng-include>
+  </body>
+</html>
